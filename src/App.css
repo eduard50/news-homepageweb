@@ -32,12 +32,11 @@ ul>li{
 
 .grid_container{
   display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-rows: 300px 300px;
+  grid-template-columns: 60% 40%;
   gap: 1rem;
 }
 
-.item{
+.grid_item{
   width: 100%;
 }
 img{
@@ -49,16 +48,58 @@ img{
 .main_image{
   grid-column: 1;
   grid-row: 1;
-  background-color: aqua;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-rows: 300px 300px;
+  gap: 10px;
 }
 
 .main_sub{
   grid-column: 1;
   grid-row: 2;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px;
+  gap: 2px;
+  align-items: center;
 }
 
-#main_subtitle{
-  font-weight: 800;
-  max-width: 300px;
-  font-size: 50px;
+.main_subtitle{
+  max-width: auto;
+  font-size: 32px;
+}
+
+.add_info{
+  padding: 10px;
+}
+
+
+#read_more{
+  margin-top: 20px;
+  width: 200px;
+  height: 40px;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  background-color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+
+.side_info{
+  padding:  0 20px;
+  grid-column: 2;
+  width: 80%;
+  height: 100%;
+  background-color: hsl(240, 100%, 5%);
+}
+
+.side_info > h2{
+  font-size: 40px;
+  color: hsl(35, 77%, 62%);
+}
+
+
+.side_news{
+  margin-top: 40px;
+  color: white;
 }

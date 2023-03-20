@@ -185,6 +185,7 @@ ul>li{
   /* Grids */
   .grid-container{
     display: grid;
+    height: 100vh;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 1fr);
     gap: 80px;
@@ -206,20 +207,19 @@ ul>li{
   }
 
   .grid-container__main-content__main-text > h2 {
-    font-size: 2rem;  
+    font-size: 40px;  
   }
   
   .grid-container__side_info{
     padding: 0 40px;
     grid-column: 1;
     grid-row: 2;
-    width: 60%;
+    width: 80%;
     height: 100%;
     background-color: hsl(240, 100%, 5%);
   }
 
   .trending-container{
-    margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);

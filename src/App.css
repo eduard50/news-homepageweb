@@ -1,7 +1,7 @@
 #root {
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 1rem;
 }
 
 .wrapper{
@@ -124,13 +124,65 @@ ul>li{
   color: hsl(236, 13%, 42%);
 }
 
+/*Menu*/
+.nav-menu__btn{
+  display: none;
+}
+.nav-menu__close-btn{
+  display: none;
+}
+
 /*Media queries*/
 
 @media all and (max-width:800px){
 
-  body{
-    margin: 0 auto;
+
+   /*Menu*/
+
+   .nav-menu__close-btn{
+    display: block;
+    background-color :hsl(36, 100%, 99%);
+    width: 50px;
+    border: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+   }
+
+   ul{
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    right: 0;
+    top: -20px;
+    background-color :hsl(36, 100%, 99%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(2000px);
+    transition: 0.2s ease;
   }
+
+  ul.active{
+    transform: translateX(0);
+    transition: 0.2s ease;
+  } 
+
+  ul > li {
+    font-size: 30px;
+    margin: 20px;
+  }
+
+  .nav-menu__btn{
+    background-color :hsl(36, 100%, 99%);
+    display: block;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    float: right;
+  }
+
+  /* Grids */
   .grid-container{
     display: grid;
     grid-template-columns: 100%;
@@ -173,10 +225,6 @@ ul>li{
     grid-template-rows: repeat(3, 1fr);
     gap: 2rem;
   }
-  /*Menu*/
 
-  nav{
-    display: none;
-  }
-  
+ 
 }

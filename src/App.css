@@ -102,3 +102,29 @@ ul>li{
   margin-top: 20px;
   color: white;
 }
+
+/*Trending*/
+
+.trending-container{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.trending-container__content{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.trending-container__content > img{
+  height: 200px;
+}
+
+.trending-container__content__text > h2{
+  color: hsl(233, 8%, 79%);
+}
+
+.trending-container__content__text > p{
+  color: hsl(236, 13%, 42%);
+}

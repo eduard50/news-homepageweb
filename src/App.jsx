@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import NavBar from './components/NavBar'
 import MainContent from './components/MainContent'
+import Trending from './components/Trending'
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div>
       <NavBar/>
       <MainContent/>
+      <Trending/>
     </div> 
   )
 }
